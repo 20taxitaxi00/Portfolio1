@@ -132,11 +132,24 @@ header {
   }
 /* /header */
 
-/* main */
-/* /main */
+/* main-logo */
+.main-logo {
+  margin: 200px auto;
+}
 
-/* menu */
-/* /menu */
+.main-img {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-img img {
+  height: 314px;
+  width: 717px;
+}
+/* /main-logo */
+
+/* blog */
+/* /blog */
 
 /* contact */
 /* /contact */
