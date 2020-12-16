@@ -89,7 +89,7 @@ header {
     width: 100%;
     height: 5px;
     background-color: #ddd;
-    transition: all 0.5s; /*â†ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³*/
+    transition: all 0.5s; 
     backface-visibility: hidden;
     border-radius: 2px;
   }
@@ -133,7 +133,7 @@ header {
 /* /header */
 
 /* main-logo */
-.main-logo {
+main {
   margin: 200px auto;
 }
 
@@ -149,7 +149,81 @@ header {
 /* /main-logo */
 
 /* blog */
+.title {
+  text-align: center;
+  font-size: 36px;
+  margin: 50px;
+}
+
+.column {
+  display: grid;
+  grid-template-columns: 330px 330px 330px;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.blog-content {
+  width: 330px;
+  height: 470px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.blog-title {
+  font-size: 22px;
+}
+
+.blog-content img {
+  width: 330px;
+  height: 220px;
+}
+
+.blog-content p {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.blog-content p:nth-of-type(2) {
+  margin-top: 5px;
+}
+
+.read-more {
+  position: absolute;
+  right: 5%;
+  bottom: 15%;
+  text-decoration: none;
+  color: #000;
+}
+
+.read-more span {
+  background-color: #000;
+  height: 2px;
+  display: block;
+  position: absolute;
+  width: 30%;
+  bottom: -30%;
+  right: 0;
+}
+
+/* shadow */
+.shadow {
+  display: inline-block;
+  transition: all .6s ease-in-out;
+}
+
+.shadow img {
+  display: block;
+  margin-right: -15px;
+}
+
+.shadow:hover {
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, .45);
+}
+/* /shadow */
 /* /blog */
+
+/* access */
+/* /access */
 
 /* contact */
 /* /contact */
