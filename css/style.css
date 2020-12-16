@@ -72,9 +72,9 @@ header {
 
 /* hamburger */
 .hamburger {
-    width: 28px;
+    width: 44px;
     height: 30px;
-    margin: 30px auto 10px;
+    margin: 30px 70px 10px auto;
     display: none;
   }
   
@@ -83,11 +83,11 @@ header {
     content: "";
     position: absolute;
     left: 0;
-    top: -9px;
+    top: -18px;
   }
   
   .hamburger span:after {
-    top: 9px;
+    top: 18px;
   }
   
   .hamburger span {
@@ -99,8 +99,8 @@ header {
   .hamburger span:after,
   .hamburger span:before {
     width: 100%;
-    height: 5px;
-    background-color: #ddd;
+    height: 8px;
+    background-color: #000;
     transition: all 0.5s; 
     backface-visibility: hidden;
     border-radius: 2px;
@@ -111,11 +111,11 @@ header {
   }
   
   .hamburger.on span:before {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(15px, 15px);
   }
   
   .hamburger.on span:after {
-    transform: rotate(-45deg) translate(7px, -8px);
+    transform: rotate(-45deg) translate(10px, -11px);
   }
 /* drawer */
 #drawer-bg {
@@ -394,18 +394,96 @@ footer ul {
   }
 
   /* header */
+  header {
+    height: 10vh;
+    width: 100%;
+  }
+
+  .header-left {
+    margin-left: 70px;
+  }
+
+  .header-left nav {
+    display: none;
+  }
+
+  .header-right {
+    margin-left: 30px;
+  }
+
+  .header-right .login-btn {
+    display: none;
+  }
 
   /* hamburger */
+  .hamburger {
+    display: block;
+  }
 
   /* drawer */
 
   /* main-logo */
 
-  /* blog */
+  .main-img img {
+    width: 512px;
+    height: 224px;
+  }
 
+  /* blog */
+  .title {
+    margin-bottom: 0;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .blog-content {
+    font-size: 22px;
+  }
   /* access & contact */
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 50px 0 100px;
+  }
+
+  /* access */
+  .access-content {
+    flex-direction: column;
+  }
+
+  /* contact */
+  fieldset .name,
+  fieldset .email {
+    width: 350px;
+  }
+
+  fieldset .inquiry {
+    width: 350px;
+  }
 
   /* footer */
+  footer {
+    justify-content: space-around;
+    flex-direction: column-reverse;
+  }
+
+  .footer-right {
+    margin-right: 0;
+  }
+
+  .footer-right li:last-child {
+    margin-right: 0;
+  }
+
+  .footer-left {
+    margin-left: 0;
+  }
 
 }
 /* /responsive */
