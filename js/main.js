@@ -11,7 +11,6 @@ $(function(){
         toggleDrawer(isActive);
     });
 
-
     // ドロワー
     function toggleDrawer(isActive) {
         $('.js-hamburger')
@@ -24,7 +23,18 @@ $(function(){
         $('.js-drawer').toggleClass('on');
     }
 
+    // 写真のFadeIn & FadeOut1
+    $(window).on('scroll', function(){
+        let main_logo = $('.main-logo').offset().top;
+        let wh = $(window).height();
+        let now_position = $(window).scrollTop();
 
+        if (main_logo <= wh + now_position){
+            $('.main-img').removeClass('hide');
+        } else {
+            $('.main-img').addClass('hide');
+        }
+    });
 
 
 

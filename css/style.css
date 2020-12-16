@@ -74,7 +74,7 @@ header {
 .hamburger {
     width: 44px;
     height: 30px;
-    margin: 30px 70px 10px auto;
+    margin: 30px 50px 10px auto;
     display: none;
   }
   
@@ -152,11 +152,16 @@ main {
 .main-img {
   display: flex;
   justify-content: space-around;
+  transition: all 7s ease;
 }
 
 .main-img img {
   height: 314px;
   width: 717px;
+}
+
+.main-img .hide {
+  opacity: 0;
 }
 /* /main-logo */
 
@@ -400,7 +405,7 @@ footer ul {
   }
 
   .header-left {
-    margin-left: 70px;
+    margin-left: 50px;
   }
 
   .header-left nav {
@@ -425,8 +430,8 @@ footer ul {
   /* main-logo */
 
   .main-img img {
-    width: 512px;
-    height: 224px;
+    width: 350px;
+    height: 150px;
   }
 
   /* blog */
