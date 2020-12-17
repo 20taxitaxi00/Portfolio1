@@ -20,7 +20,6 @@ $(function(){
         $('#drawer-bg').fadeIn(600);
         }
         $('.js-hamburger').toggleClass('on');
-        $('.js-drawer').toggleClass('on');
     }
 
     // 写真のFadeIn & FadeOut1

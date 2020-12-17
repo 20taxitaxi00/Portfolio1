@@ -118,29 +118,32 @@ header {
     transform: rotate(-45deg) translate(8px, -9px);
   }
 /* drawer */
-#drawer-bg {
+  #drawer-bg {
     display: none;
     position: fixed;
+    z-index: 1;
     top: 70px;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(255, 255, 255, .9);
+    color: #000;
   }
   
-  .drawer {
-    position: absolute;
-    top: 70px;
-    right: -200px;
-    height: 100vh;
-    width: 200px;
-    background-color: rgba(8, 8, 8, .5);
-    transition-duration: 600ms;
+  #drawer-bg ul {
+    text-align: center;
   }
   
-  .drawer.on {
-    right: 0;
-    transition-duration: 600ms;
+  #drawer-bg li {
+    font-size: 22px;
+    margin-bottom: 35px;
+  }
+  
+  #drawer-bg li:last-child {
+    margin-bottom: 0;
+  }
+  #drawer-bg li:first-child {
+    margin-top: 35px;
   }
 /* /header */
 
@@ -435,6 +438,7 @@ footer ul {
   .main-img img {
     width: 350px;
     height: 150px;
+    z-index: 0;
   }
 
   /* blog */
