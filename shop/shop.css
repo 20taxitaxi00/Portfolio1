@@ -34,6 +34,40 @@ header {
     margin-left: 45px;
 }
 
+.nav-item .brands {
+  position: relative;
+}
+
+.brands-list li {
+  margin-bottom: 15px;
+}
+
+.brands-list li:first-child {
+  margin-top: 20px;
+}
+
+.brands-list li,
+.brands-list li:first-child {
+  margin-left: 0;
+}
+
+.brands .brands-list {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 200%;
+  background: #fff;
+  opacity: 0;
+  transition: opacity 0.5s;
+  display: none;
+}
+
+.brands:hover .brands-list {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+
 /* header-right */
 .header-right {
     display: flex;

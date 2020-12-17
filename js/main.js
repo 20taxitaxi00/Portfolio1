@@ -49,7 +49,7 @@ $(function(){
 	},500);
 	setTimeout(function(){
 		$('.logo-fade').fadeOut(800);
-	},2500);
+    },2500);
 
     // スライダー
 	// let swipeOption = {
