@@ -22,19 +22,26 @@ $(function(){
         $('.js-hamburger').toggleClass('on');
     }
 
-    // 写真のFadeIn & FadeOut1
+    // 写真のFadeIn & FadeOut
     $(window).on('scroll', function(){
         let main_logo = $('.main-logo').offset().top;
         let wh = $(window).height();
         let now_position = $(window).scrollTop();
 
         if (main_logo <= wh + now_position){
-            $('.main-img').removeClass('hide');
+            $('.main-img').fadeIn(600);
         } else {
-            $('.main-img').addClass('hide');
+            $('.main-img').fadeOut(600);
         }
     });
 
+    // 記事のread-more下線
+	$('.shadow').on('mouseover', function(){
+		$(this).find('span').animate({'width':'100%'}, 500)
+	});
+	$('.shadow').on('mouseleave', function(){
+		$(this).find('span').animate({'width':'30%'}, 500)
+	});
 
 
 });
