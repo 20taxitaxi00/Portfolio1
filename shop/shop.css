@@ -194,9 +194,16 @@ hr {
   margin: 30px auto;
 }
 
+section {
+  display: none;
+}
+
 .tab-wrapper {
   text-align: center;
+}
 
+.active {
+  display: block;
 }
 /* brand-content */
 article {
