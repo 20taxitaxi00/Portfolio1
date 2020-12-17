@@ -41,7 +41,15 @@ $(function(){
 	});
 	$('.shadow').on('mouseleave', function(){
 		$(this).find('span').animate({'width':'30%'}, 500)
-	});
+    });
+    
+    // 最初にロゴがfade
+    setTimeout(function(){
+		$('.logo-fade p').fadeIn(1000);
+	},500);
+	setTimeout(function(){
+		$('.logo-fade').fadeOut(800);
+	},2500);
 
     // スライダー
 	// let swipeOption = {
