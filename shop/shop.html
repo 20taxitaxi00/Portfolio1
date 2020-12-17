@@ -7,10 +7,41 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="shop.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
 </head>
 <body>
     <!-- header -->
-    <header></header>
+    <header>
+        <!-- header left -->
+        <div class="header-left">
+            <a class="btn search-btn"><i class="fas fa-search fa-2x"></i></a>
+            <nav>
+                <ul class="nav-item">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a>ABOUT</a></li>
+                    <li><a href="shop/shop.html">SHOP</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- header right -->
+        <div class="header-right">
+            <a class="btn login-btn">LOGIN</a>
+            <a class="btn shopping-btn"><i class="fas fa-shopping-cart fa-2x"></i></a>
+        </div>
+        <!-- hamburger -->
+        <p id="hamburger-btn" class="js-hamburger hamburger">
+            <span></span>
+        </p>
+        <!-- drawer -->
+        <div id="drawer-bg">
+            <ul>
+                <li>LOGIN</li>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a>ABOUT</a></li>
+                <li><a href="shop/shop.html">SHOP</a></li>
+            </ul>
+        </div>
+    </header>
     <!-- /header -->
 
     <!-- slider -->
@@ -22,11 +53,31 @@
     <!-- /tab-menu -->
 
     <!-- footer -->
-    <footer></footer>
+    <hr>
+    <hr>
+    <footer>
+        <!-- footer-left -->
+        <div class="footer-left">
+            <ul>
+                <li><a class="btn"><i class="fas fa-envelope fa-2x"></i></a></li>
+                <li><a class="btn"><i class="fas fa-info-circle fa-2x"></i></i></a></li>
+                <li><a class="btn"><i class="fas fa-code-branch fa-2x"></i></a></li>
+                </ul>
+        </div>
+        <!-- footer-right -->
+        <div class="footer-right">
+            <ul>
+                <li><i class="fab fa-instagram-square fa-2x"></i></li>
+                <li><i class="fab fa-facebook-square fa-2x"></i></li>
+            </ul>
+        </div>
+        <a id="return-top"><i class="fas fa-arrow-up fa-3x"></i></a>
+        </footer>
     <!-- footer -->
 
 
     <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="../js/main.js"></script>
 </body>

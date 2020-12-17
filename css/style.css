@@ -70,6 +70,12 @@ header {
     padding: 15px 15px;
 }
 
+.nav-item a,
+#drawer-bg a {
+  color: #000;
+  text-decoration: none;
+}
+
 /* hamburger */
 .hamburger {
     width: 36px;

@@ -43,5 +43,17 @@ $(function(){
 		$(this).find('span').animate({'width':'30%'}, 500)
 	});
 
+    // スライダー
+	// let swipeOption = {
+	// 	loop: true,
+	// 	effect: 'fade',
+	// 	autoplay: {
+	// 	  delay: 3000,
+	// 	  disableOnInteraction: false,
+	// 	},
+	// 	speed: 1500,
+	// }
+	// new Swiper('.swiper-container', swipeOption);
+
 
 });
