@@ -8,7 +8,7 @@ header {
     background-color: rgba(255, 255, 255, .8);
     align-items: center;
     position: fixed;
-    /* margin-top: -300px; */
+    margin-top: -200px;
     z-index: 1;
 }
 /* header-left */
@@ -188,11 +188,47 @@ header {
 }
 /* /header */
 
-/* slider */
-/* /slider */
+/* brand-article */
+hr {
+  width: 70%;
+  margin: 30px auto;
+}
 
-/* tab-menu */
-/* /tab-menu */
+.tab-wrapper {
+  text-align: center;
+
+}
+/* brand-content */
+article {
+  margin-top: 200px;
+}
+
+.brand-logo img {
+  width: 1024px;
+  height: 550px;
+}
+
+.brands-content {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.brands-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.brands-content p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* slider */
+.swiper-container {
+  margin: 100px 0;
+  width: 900px;
+}
+/* /brand-article */
 
 /* footer */
 footer {
