@@ -38,6 +38,21 @@ $(function(){
 		// $('.logo-fade').fadeOut(800);
     // },2500);
 
+    // タブメニュー
+    $('.brands-list a').on('click', function(){
+        if ($(this).hasClass('active')) {
+            return false;
+        }
+
+        $('.brands-list a').removeClass('active');
+        $(this).addClass('active');
+        $('article > section').removeClass('active');
+        $('article > section').filter(this.hash).addClass('active');
+        return false;
+
+
+    });
+
     // スライダー
     var mySwiper = new Swiper ('.swiper-container', {
         loop: true,
