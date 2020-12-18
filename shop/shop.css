@@ -437,6 +437,17 @@ footer ul {
       display: block;
     }
 
+    /* drawer */
+    #drawer-bg .brands {
+      position: relative;
+    }
+
+    #drawer-bg .brands-list {
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
     /* brand-article */
     .brand-logo img {
       width: 350px;
@@ -479,6 +490,17 @@ footer ul {
     #return-top {
       padding: 3px 6px;
       font-size: 10px;
+    }
+
+    .logo-fade img {
+      width: 360px;
+      height: 150px;
+    }
+
+    .modal-content {
+      width: 300px;
+      height: 250px;
+      margin-left: -170px;
     }
 
 }
