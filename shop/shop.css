@@ -259,6 +259,14 @@ article {
   margin: 100px 0;
   width: 900px;
 }
+
+.tab-wrapper .swiper-container {
+  z-index: 0;
+}
+
+.swiper-container .swiper-wrapper {
+  z-index: 0;
+}
 /* /brand-article */
 
 /* footer */

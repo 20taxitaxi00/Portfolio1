@@ -36,9 +36,9 @@
             <!-- drawer -->
             <div id="drawer-bg">
                 <ul>
-                    <li>LOGIN</li>
+                    <li><a href="#" class="login">LOGIN</a></li>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a>ABOUT</a></li>
+                    <li><a href="#">ABOUT</a></li>
                     <li><a href="shop/shop.html">SHOP</a></li>
                 </ul>
             </div>
@@ -145,11 +145,28 @@
         </footer>
         <!-- /footer -->
 
+
         <!-- logo-fade -->
         <!-- <div class="logo-fade">
             <p><img src="img/phonto.JPG" alt="PARTS"></p>
         </div> -->
         <!-- /logo-fade -->
+
+
+        <!-- modal -->
+        <div class="modal-content">
+            <div class="modal-close">
+                <span class="js-modal-close">×</span>
+            </div>
+            <form class="modal-form">
+                <input class="modal-form-email" type="email" placeholder="メールアドレス">
+                <input class="modal-form-password" type="password" placeholder="パスワード">
+                <button id="js-modal-form-btn" class="modal-form-btn register">LOGIN</button>
+            </form>
+            <p><a>※新規登録はこちらから</a></p>
+        </div>
+        <div id="modal-bg" class="js-modal-close"></div>
+        <!-- /modal -->
 
     </div>
     <!-- js -->

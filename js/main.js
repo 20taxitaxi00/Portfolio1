@@ -29,6 +29,26 @@ $(function(){
     $('.shadow').on('mouseleave', function(){
       $(this).find('span').animate({'width':'30%'}, 500)
       });
+
+    // モーダル表示
+    // ログインでモーダル
+    $('.login-btn, .login').on('click', function(){
+      showModal();
+    });
+    // モーダルを閉じる
+    $('.js-modal-close').on('click', function(){
+      closeModal();
+    });
+
+    // モーダル関数
+    function showModal() {
+      $('#modal-bg').fadeIn(600);
+      $('.modal-content').fadeIn(800);
+    }
+    function closeModal() {
+      $('#modal-bg').fadeOut(800);
+      $('.modal-content').fadeOut(600);
+    }
     
     // 最初にロゴがfade
     // setTimeout(function(){
