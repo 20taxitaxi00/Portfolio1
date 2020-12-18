@@ -30,12 +30,35 @@ header {
     margin-left: 30px;
 }
 
+.nav-item li:hover {
+  border-bottom: solid 1px #000;
+}
+
 .nav-item li:first-child {
     margin-left: 45px;
 }
 
 .nav-item .brands {
   position: relative;
+}
+
+/* .brands .arrow::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 0 0 15px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} */
+
+.brands-list {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
 }
 
 .brands-list li {
@@ -53,17 +76,18 @@ header {
 
 .brands .brands-list {
   position: absolute;
-  top: 20px;
+  top: 17px;
   left: 0;
   width: 200%;
   background: #fff;
   opacity: 0;
   transition: opacity 0.5s;
-  display: none;
+  /* display: none; */
 }
 
 .brands:hover .brands-list {
   opacity: 1;
+  visibility: visible;
   transition: opacity 1s;
 }
 
