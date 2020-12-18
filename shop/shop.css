@@ -322,6 +322,83 @@ footer ul {
 /* /return top */
 /* /footer */
 
+/* modal */
+#modal-bg {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0, .5);
+	z-index: 100;
+}
+
+.modal-content {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -200px;
+	padding: 20px;
+	height: 300px;
+	width: 400px;
+	background-color: #fff;
+	border-radius: 10px;
+	z-index: 101;
+}
+
+.modal-close {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 30px;
+}
+
+.modal-close > span {
+	cursor: pointer;
+}
+
+.modal-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 90%;
+}
+
+.modal-form-email,
+.modal-form-password {
+	width: 90%;
+	height: 50px;
+}
+
+.modal-form-btn {
+	padding: 10px 50px;
+	cursor: pointer;
+  color: #fff;
+  background-color: #000;
+	font-weight: bold;
+	font-size: 16px;
+	border-radius: 2px;
+}
+
+.modal-form-btn:hover {
+  color: #000;
+  background-color: #FFF;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+
+.modal-content P {
+  text-align: center;
+}
+
+.modal-content a {
+  border-bottom: solid 1px #000;
+}
+/* /modal */
+
 /* responsive */
 @media screen and (max-width: 767px) {
     body {
@@ -360,6 +437,25 @@ footer ul {
       display: block;
     }
 
+    /* brand-article */
+    .brand-logo img {
+      width: 350px;
+      height: 170px;
+    }
+
+    .brands-content {
+      width: 300px;
+    }
+
+    .swiper-container {
+      width: 350px;
+    }
+
+    .swiper-slider img {
+      width: 350px;
+      height: 180px;
+    }
+    /* /brand-article */
 
 
     footer {
